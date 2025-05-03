@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webisite with DOM Manipulation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="main-title">My DOM website</h1>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2 id="dynamic-text">Welcome to My DOM Website!</h2>
+            <p id="color-display">This is a simple demonstration of DOM manipulation using JavaScript.</p>
+        </section>
+        <section class="card">
+            <h2 id="dynamic-text">About This Site</h2>
+            <p>This site demonstrates basic DOM manipulation using JavaScript.</p>
+            <p>Click the buttons below to see the magic!</p>
+        </section>
+        <section class="card">
+            <h2 id="dynamic-text">Interactive Elements</h2>
+            <p>Click the buttons below to change the text, toggle colors, or add/remove an element.</p>
+        </section>
+        <section class="card">
+            <h2>Color Toggle</h2>
+            <p id="color-text">This text will change color when you click the button.</p>
+            <p>Click the button to see the color change!</p>
+        </section>
+        <section class="card">
+            <h2>Dynamic Element</h2>
+            <p id="dynamic-element">This element will be added/removed dynamically.</p>
+            <p>Click the button to see the magic!</p>
+        </section>
+        <section class="controls">
+            <button id="text-btn" class="btn purple">
+                <i class="fas fa-text-width"></i> Change Text
+            </button>
+            <button id="color-btn" class="btn black">
+                <i class="fas fa-palette"></i> Toggle Colors
+            </button>
+            <button id="element-btn" class="btn purple">
+                <i class="fas fa-plus-circle"></i> Toggle Element
+            </button>
+        </section>
+
+        <section id="special-section" class="card hidden">
+            <h3>New Element!</h3>
+            <p>This element appears/disappears magically</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>DOM Manipulation Demo © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

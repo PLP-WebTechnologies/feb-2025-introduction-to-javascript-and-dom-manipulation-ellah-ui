@@ -1,0 +1,107 @@
+:root {
+    --purple: #8a2be2;
+    --dark-purple: #5a189a;
+    --black: #121212;
+    --light-black: #1e1e1e;
+    --white: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: var(--light-black);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--purple);
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background-color: var(--light-black);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn i {
+    font-size: 1.1rem;
+}
+
+.purple {
+    background-color: var(--purple);
+    color: white;
+}
+
+.purple:hover {
+    background-color: var(--dark-purple);
+    transform: translateY(-2px);
+}
+
+.black {
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--purple);
+}
+
+.black:hover {
+    background-color: var(--purple);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--light-black);
+    margin-top: 2rem;
+    border-top: 1px solid var(--purple);
+}
+
+/* Animation for color changes */
+@keyframes colorPulse {
+    0% { color: var(--white); }
+    50% { color: var(--purple); }
+    100% { color: var(--white); }
+}
+
+.color-change {
+    animation: colorPulse 2s infinite;
+}
